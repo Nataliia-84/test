@@ -16,8 +16,10 @@ function onSearch(evt) {
     console.dir(evt.target);
     const { query, days } = evt.currentTarget.elements;
     console.log(query)
-    console.log(days)
-    getWeather(query.value, days.value).then(data => list.innerHTML=createMarkup(data.forecast.forecastday)).catch(err => console.log(err));
+    console.dir(days)
+    getWeather(query.value, days.value)
+        .then(data => console.log(createMarkup(data.forecast.forecastday)))
+        .catch(err => console.log(err));
 }
 
 
