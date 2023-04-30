@@ -1,0 +1,30 @@
+.form{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.select{
+margin-left: 20px;
+}
+
+.markup{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    list-style: none;
+}
+
+.weatheritem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+.button{
+    margin-left: 20px;
+}

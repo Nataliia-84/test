@@ -14,17 +14,19 @@ form.addEventListener('submit', onSearch);
 function onSearch(evt) {
     evt.preventDefault()
     console.dir(evt.target);
-    const { query, days } = evt.currentTarget.elements;
-    console.log(query)
-    console.dir(days)
-    getWeather(query.value, days.value)
-        .then(data => console.log(createMarkup(data.forecast.forecastday)))
+    const inputName = evt.currentTarget.elements.query.value;
+    const selectName = evt.currentTarget.elements.days.value;
+    // const { query, days } = evt.currentTarget.elements;
+    console.log(inputName)
+    console.dir(selectName)
+    getWeather(inputName, selectName)
+        .then(data => list.innerHTML=createMarkup(data.forecast.forecastday))
         .catch(err => console.log(err));
 }
 
 
-function getWeather(cityName, days) {
-    const URL = `${BASE_URL}${END_POINT}?key=ce2cb9b2a3da414bb5b172546231704&q=${cityName}&days=${days}$lang=uk`;
+function getWeather(cityName, selectName) {
+    const URL = `${BASE_URL}${END_POINT}?key=ce2cb9b2a3da414bb5b172546231704&q=${cityName}&days=${selectName}&$lang=uk`;
     return fetch(URL).then(resp => {
         if (!resp.ok) {
             throw new Error(resp.statusText);
@@ -36,7 +38,7 @@ function getWeather(cityName, days) {
 }
 
 function createMarkup(arr) {
-   return arr.map(({date,day:{avgtemp_c,condition:{icon, text}}})=>` <li>
+   return arr.map(({date,day:{avgtemp_c,condition:{icon, text}}})=>` <li class="weatheritem">
         <img src="${icon}" alt="${text}">
         <p>${text}</p>
         <h2>${date}</h2>
