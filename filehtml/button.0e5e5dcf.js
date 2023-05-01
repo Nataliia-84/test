@@ -1,0 +1,2 @@
+const e=document.querySelector(".js-target-btn"),c=document.querySelector(".js-add-listener"),n=document.querySelector(".js-remove-listener");function t(){console.log("click")}c.addEventListener("click",(function(){e.addEventListener("click",t),console.log("clickadd")})),n.addEventListener("click",(function(){e.removeEventListener("click",t),console.log("clickremove")}));
+//# sourceMappingURL=button.0e5e5dcf.js.map

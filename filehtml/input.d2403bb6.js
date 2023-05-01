@@ -1,0 +1,2 @@
+var refs={input:document.querySelector(".js-input"),nameLabel:document.querySelector(".js-button > span"),license:document.querySelector(".js-license"),btn:document.querySelector(".js-button")};function onInputChange(e){var n=e.currentTarget.value;console.log(n),refs.nameLabel.textContent=n}function onLicenseChange(e){var n=e.currentTarget.checked;console.log(n),refs.btn.disabled=!n}refs.input.addEventListener("input",onInputChange),refs.license.addEventListener("change",onLicenseChange);
+//# sourceMappingURL=input.d2403bb6.js.map
