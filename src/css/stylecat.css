@@ -1,0 +1,265 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --------------скидаємо стилі ------------------*/
+h1,
+h2,
+h3,
+h4,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+/* ----------------------------------------------------- */
+
+.hero{
+    position: relative;
+    height: 480px;
+    border-radius: 16px;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.message{
+    position: absolute;
+    left:28px;
+    bottom: 52px;
+    width: 432px;
+    background: #0F3F3C;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.message-title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.25px;
+    color: #FFFFFF;
+
+    margin-bottom: 8px;
+}
+
+.message-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+.container{
+
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 8px;
+padding-right: 8px;
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:16px;
+}
+
+
+.site-logo{
+
+    display: flex;
+    align-items: center;
+    gap:8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+
+    color: #F07F2E;
+    text-decoration: none;
+
+}
+
+.nav-list{
+    display: flex;
+    gap:40px;
+    list-style: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+      
+}
+
+.nav-link{
+    color: #2C2C2C;
+    text-decoration: none;
+
+}
+
+.nav-link:hover{
+    color: #F07F2E;
+
+}
+.section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    color: #2C2C2C;
+
+    margin-bottom: 40px;
+}
+
+.list-section{
+    display: flex;
+    gap: 40px;
+
+}
+/*  overflow: hidden; - ховає все що вилазить за рамки дляя картинок */
+
+.list-item{
+    overflow: hidden; 
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+.list-item:hover{
+box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.images{
+    margin-bottom: 16px;
+
+}
+
+.section-name{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #2C2C2C;
+    
+   margin-bottom: 8px;
+
+
+}
+
+.section-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #2C2C2C;
+
+   
+}
+
+.content{
+    padding: 16px 8px 24px 8px;
+}
+.title{
+    margin-bottom: 8px;
+}
+
+.text{
+margin-bottom: 40px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+
+}
+
+.gallery-item{
+    flex-basis: calc((100% - 5 * 16px) / 6);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.gallery-item:hover{
+    
+    filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+}
+
+.page-footer{
+    background: #0F3F3C;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.page-footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo{
+    margin-bottom: 8px;
+}
+.footer-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.social-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    text-align: end;
+    margin-bottom: 8px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social-links-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width:32px;
+    border-radius: 50%;
+}
+
+.social-links-icon:hover {
+    background-color: #FFFFFF;
+}
+
+.social-links-icon:hover
+.icon{
+
+    background: #FFFFFF;
+    fill: #F07F2E;
+}
+.icon{
+    fill: #FFFFFF;
+}
+
