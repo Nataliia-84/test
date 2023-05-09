@@ -1,0 +1,2 @@
+var bodyEl=document.querySelector("body"),headerEl=document.querySelector(".header__box"),logotextEl=document.querySelector(".logo__text"),toggleEl=document.querySelector("#toggle"),registrEl=document.querySelector(".register");function onclickToggleEl(e){console.log(e.currentTarget),bodyEl.classList.toggle("dark-theme"),headerEl.classList.toggle("dark"),logotextEl.classList.toggle("dark__icon"),registrEl.classList.toggle("dark-theme")}toggleEl.addEventListener("click",onclickToggleEl);
+//# sourceMappingURL=sing.bcd9eaf8.js.map
