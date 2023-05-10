@@ -21,6 +21,21 @@ a{
     
 }
 
+/* .header__burger{
+    display:none;
+}
+ @media  (max-width: 768px) {
+        .header__burger{
+            display:block;
+    }
+
+
+.header__singin{
+@media (max-width 768px) {
+    display:none;
+    
+} */
+/* } */
 .logo{
     display: flex;
     align-items: center;
@@ -153,6 +168,7 @@ a{
 
 .register__form--button{
     width: 100%;
+    max-width: 499px;
     /* height: 64px; */
     border: 2px solid #111111;
     border-radius: 40px;
@@ -166,3 +182,67 @@ a{
     letter-spacing: -0.01em;
     text-transform: uppercase;
 }
+
+
+/* modal------------------------------------------------------- 
+*/
+
+.backdrop{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: #4F2EE8;
+}
+
+.modal{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 579px;
+        height: 100%;
+        max-height: 516px;
+        background: #F6F6F6;
+        border: 2px solid #111111;
+        border-radius: 18px;
+        padding: 80px 40px 84px 40px; 
+}
+
+/* categorybook */
+
+/* .category__book{
+    width: 328px;
+    height: 472px;
+} */
+
+.category__book--name:not(:last-child){
+    margin-bottom: 32px;
+}
+
+
+/* aside----------- */
+.page{
+    display: flex;
+}
+
+.aside{
+    display: block;
+        width: 356px;
+        height: 472px;
+        outline: 1px solid tomato;
+}
+
+.main{
+    display: flex;
+    margin-left: 40px;
+    width:996px;
+    height: 426px;
+    outline:1px solid tomato;
+}
+
+
